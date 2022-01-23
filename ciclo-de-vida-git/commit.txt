@@ -2,3 +2,6 @@ git status (Mostra os status não modificado, modificado, stage ou commit
 
 1.1. mv (nome_do_arquivo) ./ (nome_da_pasta)
 
+1.2. git add * (envia para o estado stage)
+
+1.3. git commit 'nome do aqruivo" (Envia para o estado commit)
