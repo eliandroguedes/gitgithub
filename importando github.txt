@@ -11,3 +11,5 @@
 1.5. git remot -v (lista de repositórios cadastrados)
 
 1.6. git push origin master (enviar os commits para o servidor github)
+
+1.7. git pull origin master( baixa o arquivo do servidor github para sua máquina)
