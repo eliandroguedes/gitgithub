@@ -1,0 +1,46 @@
+Cadastro de uma chave SSH
+
+1 - ssh-keygen -t ed25519 -C "your_email@example.com" (Cria uma chave SSH, usando o e-mail)
+
+	1.1.  Generating public/private algorithm key pair. (Mensagem que está sendo gerada um par de chaves privada e pública)
+
+	1.2. Enter a file in which to save the key (/Users/you/.ssh/id_algorithm): [Press enter] (Pressione enter para continuar)
+
+	1.3. Enter passphrase (empty for no passphrase): [Type a passphrase] (Solicita uma frase secreta, neste caso pressione enter para continuar)
+
+	      Enter same passphrase again: [Type passphrase again] .
+
+2 - Copie a chave SSH e cole no servidor GitHub. (Entrar na pasta c/ users/ .../ .ssh para visualizar as chaves)
+
+	2.1. cat id_ed25519.pub (Comando para visualizar o algoritimo da chave pública)
+
+	2.2. Copie a chave pública para o git hub para settings chave ssh
+
+
+3 - Criando um agente responsável pelo controle de chaves (Dentro da pasta c / users/ .../ .ssh)
+
+	3.1. eval $(ssh-agent -s) (Criando um agente)
+	       agente pid 1382
+	
+	3.2. ssh-add id_25519 (Passando a chave privada ao agente)
+
+4 - Clonando um repositório
+
+	4.1. git clone git@github.com:usuário/gitgithub.git (Acesse o github e copie a chave ssh)
+
+5. Criando um repositório no git
+
+	5.1. git init (Iniciar um repositório vazio)
+
+	5.2. git config --global user.email 'usuario@gmail.com'
+
+	5.3. git config --global user.name 'eusoueu'
+
+	5.4. Crie um arquivo tipo texto no bloco de notas e salve.
+
+	5.5. git add * (Adicionando no modo starge)
+
+	5.6. git commit -m 'primeiro commit' (Criando um commit fase final no modo )
+
+
+
