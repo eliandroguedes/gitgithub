@@ -1,0 +1,13 @@
+1.0. git config --global user.name "nome do email"(configura no git para se comunicar com o github)
+
+1.1. git config --list (lista toda configuração go git)
+
+1.2. git config --global --unset user.email (limpa o email da configuração)
+
+1.3 git config --global --unset user.name (limpa o nome do usuário da configuração)
+
+1.4. git remote add origin git@github.com:usuario/gitgithub.git (cria uma comunicação entre o git e um github para enviar os commits da máquina ao servidor)
+
+1.5. git remot -v (lista de repositórios cadastrados)
+
+1.6. git push origin master (enviar os commits para o servidor github)
